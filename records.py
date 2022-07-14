@@ -270,6 +270,12 @@ class Database(object):
         self._engine = create_engine(self.db_url, **kwargs)
         self.open = True
 
+    def get_engine(self):
+        # Return the engine if open
+        if not self.open:
+            raise exc.ResourceClosedError('Database closed.')
+        return self._engine
+
     def close(self):
         """Closes the Database."""
         self._engine.dispose()
