@@ -49,20 +49,20 @@ requires = ['SQLAlchemy',
             'openpyxl>2.6.0', # https://github.com/kennethreitz-archive/records/pull/184#issuecomment-606207851
             'tablib>=0.11.4',
             'docopt']
-version = '0.5.3'
+version = '0.5.4'
 
 
 def read(f):
     return open(f, encoding='utf-8').read()
 
 setup(
-    name='records',
+    name='records-fork',
     version=version,
     description='SQL for Humans',
     long_description=read('README.rst') + '\n\n' + read('HISTORY.rst'),
-    author='Kenneth Reitz',
+    author='Kenneth Reitz(copyright)',
     author_email='me@kennethreitz.org',
-    url='https://github.com/kennethreitz/records',
+    url='https://github.com/vicrack/records',
     py_modules=['records'],
     package_data={'': ['LICENSE']},
     include_package_data=True,
@@ -90,6 +90,10 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: Implementation :: CPython',
     ),
     cmdclass={

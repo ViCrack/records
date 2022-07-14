@@ -1,32 +1,6 @@
 Records: SQL for Humans™
 ========================
 
-
-.. image:: https://img.shields.io/pypi/v/records.svg
-    :target: https://pypi.python.org/pypi/records
-
-.. image:: https://travis-ci.org/kennethreitz/records.svg?branch=master
-    :target: https://travis-ci.org/kennethreitz/records
-
-.. image:: https://img.shields.io/badge/SayThanks.io-☼-1EAEDB.svg
-    :target: https://saythanks.io/to/kennethreitz
-
-
-
-**Records is a very simple, but powerful, library for making raw SQL queries
-to most relational databases.**
-
-.. image:: https://farm1.staticflickr.com/569/33085227621_7e8da49b90_k_d.jpg
-
-Just write SQL. No bells, no whistles. This common task can be
-surprisingly difficult with the standard tools available.
-This library strives to make this workflow as simple as possible,
-while providing an elegant interface to work with your query results.
-
-*Database support includes RedShift, Postgres, MySQL, SQLite, Oracle, and MS-SQL (drivers not included).*
-
-----------
-
 ☤ The Basics
 ------------
 We know how to write SQL, so let's send some to our database:
@@ -163,9 +137,6 @@ Of course, the recommended installation method is `pipenv <http://pipenv.org>`_:
 
 As an added bonus, a ``records`` command-line tool is automatically
 included. Here's a screenshot of the usage information:
-
-.. image:: http://f.cl.ly/items/0S14231R3p0G3w3A0x2N/Screen%20Shot%202016-02-13%20at%202.43.21%20AM.png
-   :alt: Screenshot of Records Command-Line Interface.
 
 ☤ Thank You
 -----------
