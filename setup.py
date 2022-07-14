@@ -46,7 +46,7 @@ class PublishCommand(Command):
         sys.exit()
 
 requires = ['SQLAlchemy',
-            'openpyxl<2.5.0', # temporary fix to issue #142
+            'openpyxl>2.6.0', # https://github.com/kennethreitz-archive/records/pull/184#issuecomment-606207851
             'tablib>=0.11.4',
             'docopt']
 version = '0.5.3'
