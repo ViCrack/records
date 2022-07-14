@@ -64,6 +64,16 @@ class Record(object):
         except KeyError as e:
             raise AttributeError(e)
 
+    def __contains__(self, key):
+        try:
+            self[key]
+            return True
+        except KeyError:
+            return False
+
+    def __len__(self):
+        return len(self.keys())
+
     def __dir__(self):
         standard = dir(super(Record, self))
         # Merge standard attrs with generated ones (from column names).
