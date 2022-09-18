@@ -27,7 +27,7 @@ class Record(object):
     __slots__ = ('_keys', '_values')
 
     def __init__(self, keys, values):
-        self._keys = keys
+        self._keys = list(keys)
         self._values = values
 
         # Ensure that lengths match properly.
