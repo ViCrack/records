@@ -35,7 +35,7 @@ class Record(object):
 
     def keys(self):
         """Returns the list of column names from the query."""
-        return self._keys
+        return list(self._keys)
 
     def values(self):
         """Returns the list of values from the query."""
